@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    width: 120px;
+    transition: transform 0.5s ease-in-out;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #ffebee;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('/image/bg.png') no-repeat center center/cover;
+    min-height: 400px;
+    color: #fff;
+}
+
+main img {
+    width: 150px;
+    
+}
+
+main p {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fbe9e7;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes logoAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Button Hover Animation */
+header ul li a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #ffccbc;
+    transition: width 0.3s;
+}
+
+header ul li a:hover:before {
+    width: 100%;
+}
+
+/* Section Styling */
+.food-delivery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff3e0;
+}
+
+.food-delivery h2 {
+    font-size: 28px;
+    color: #d32f2f;
+    margin-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.benefit h3 {
+    margin: 15px 0;
+    color: #c62828;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #424242;
+}
+
+.benefit img:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styling */
+.order-now {
+    padding: 15px 30px;
+    background-color: #d32f2f;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-now:hover {
+    background-color: #b71c1c;
+}
+
